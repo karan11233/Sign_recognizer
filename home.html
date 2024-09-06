@@ -1,0 +1,1641 @@
+<!DOCTYPE html><!-- ✨ Built with Framer • https://www.framer.com/
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+
+   End of headStart -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Framer bdd6aa1">
+    <title>SignForge</title>
+    <meta name="description" content="Made with Framer">
+    <meta name="framer-search-index"
+        content="https://framerusercontent.com/sites/7bSFHQWmGSsaFf1sIa9lwp/searchIndex-lllzmw1f.lf.json">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SignForge">
+    <meta property="og:description" content="Made with Framer">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SignForge">
+    <meta name="twitter:description" content="Made with Framer">
+
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+    <!-- <link rel="canonical" href="https://signify-translate-with.framer.ai/home"> -->
+    
+     <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="C:\Users\karan\OneDrive\Desktop\ASMP2 (5)\ASMP2\assets\css\style.css" rel="stylesheet">
+  
+
+    <!-- End of headEnd -->
+
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<script type="text/javascript">
+    // Function to hide the flash message after a specific interval
+    function hideFlashMessage() {
+        var flashMessage = document.getElementById('flash-message');
+        if (flashMessage) {
+            setTimeout(function () {
+                flashMessage.style.display = 'none';
+            }, 2000); // Adjust the time (in milliseconds) as needed
+        }
+    }
+
+
+    // Function to Print prediction Characters in text
+    // function updatePrediction(prediction) {
+    //     document.getElementById('prediction').textContent = prediction;
+    // }
+</script>
+
+</head>
+
+<body class="framer-body-rrQS5Kq7S">
+
+
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('home')}}">SignForge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-6" aria-current="page" href="{{ url_for('home')}}">Home</a>
+                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link  fs-6" href="{{ url_for('about')}}">About</a>-->
+<!--                    </li>-->
+                </ul>
+            </div>
+            <div class="d-flex justify-content-end">
+                <a href="templates\login.html" class="btn btn-outline-light mx-2">Login</a>
+                <a href="{{ url_for('register') }}" class="btn btn-outline-light">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category,message in messages %}
+    <div id="flash-message" style="margin-bottom: -70px" class="alert  alert-{{category}}">{{message}}</div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+
+
+
+    
+    <!-- <script async="" src="https://events.framer.com/script"
+        data-fid="205b3b0a774d063e50d1bc987194908077e7ecd1f5226f51540b0d16c0f46348"></script> -->
+
+
+        <section id="hero" class="d-flex align-items-center justify-content-center" style='background-image: url("assets/img/fifth.jpg");'>
+    
+            <div class="container" data-aos="fade-up">
+              
+        
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                  <h1>Gesture Language Translator<span></span></h1>
+                  <h2>We are providing Gesture to text for mute people and Gesture to speech for blind people</h2>
+                </div>
+              </div>
+        
+              <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+                <div class="col-xl-2 col-md-4">
+                  <div class="icon-box">
+                    <i class="ri-store-line"></i>
+                    <h3><a href="">SIGN LANGUAGE RECOGNITION</a></h3>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                  <div class="icon-box">
+                    <i class="ri-bar-chart-box-line"></i>
+                    <h3><a href="">SPEECH TO SIGN LANGUAGE</a></h3>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                  <div class="icon-box">
+                    <i class="ri-calendar-todo-line"></i>
+                    <h3><a href="">LEARN SIGN LANGUAGE</a></h3>
+                  </div>
+                </div>
+               
+            </div>
+          </section><!-- End Hero -->
+        
+          <main id="main">
+        
+            <!-- ======= About Section ======= -->
+            <section id="about" class="about">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="row">
+                  <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                    <img src="assets/img/12.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Welcome to Gesture Language Translator!</h3>
+                    <p class="fst-italic">
+                      At Gesture Language Translator, we are passionate about facilitating communication for all individuals, regardless of their preferred mode of expression. We understand that language extends beyond spoken and written words, encompassing gestures and movements as well. Our platform is dedicated to breaking down barriers and fostering inclusive communication through gesture language translation.
+                    </p>
+                    <ul>
+                      <li><i class="ri-check-double-line"></i> Our Mission</li>
+                      <p>Our mission at Gesture Language Translator is to empower individuals to communicate effectively through the use of gesture languages. We are committed to providing a seamless and intuitive platform that enables real-time translation of hand gestures into written text, ensuring that everyone has the opportunity to express themselves fully.</p>
+                      <li><i class="ri-check-double-line"></i> What We Do</li>
+                      <p>Gesture Language Translator offers an innovative solution for translating gesture languages such as American Sign Language (ASL), British Sign Language (BSL), and more. By harnessing advanced technology, our translator accurately interprets hand movements, allowing users to convey their message with clarity and precision.</p>
+                      <li><i class="ri-check-double-line"></i> How It Works</li>
+                      <p>Using our user-friendly interface, simply activate your webcam and begin signing. Our sophisticated gesture recognition system analyzes your movements in real-time, converting them into written text instantly. Whether you're communicating with individuals who do not understand sign language or prefer written communication, Gesture Language Translator ensures effective communication for all.
+            
+                      </p>
+                      <li><i class="ri-check-double-line"></i> Why Choose Us</li>
+                      <p>we can provide  Accuracy,Accessibility and Privacy.
+                        </p>
+                        
+                    <p>
+                      Experience the transformative power of seamless communication with Gesture Language Translator. Try our platform today and join us in creating a world where communication knows no bounds.
+                    </p>
+                  </div>
+                </div>
+        
+              </div>
+            </section><!-- End About Section -->
+        
+            <!-- ======= Clients Section ======= -->
+            <section id="clients" class="clients">
+              <div class="container" data-aos="zoom-in">
+        
+                <div class="clients-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+        
+              </div>
+            </section><!-- End Clients Section -->
+        
+            <!-- ======= Features Section ======= -->
+            <section id="features" class="features">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="row">
+                  <div class="image col-lg-6" style='background-image: url("assets/img/front.jpg");' data-aos="fade-right"></div>
+                  <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                      <i class="bx bx-receipt"></i>
+                      <h4>Multimodal Communication</h4>
+                      <p>There's potential for integration with other communication modalities such as speech recognition and synthesis, enabling multimodal communication interfaces. This could facilitate more natural interactions between sign language users and non-signers, allowing for fluid communication across different modes.</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                      <i class="bx bx-cube-alt"></i>
+                      <h4>Global Collaboration</h4>
+                      <p>Collaboration among researchers, developers, sign language experts, and the deaf community worldwide will be crucial for advancing sign language translation technology. Open-source initiatives and collaborative projects can accelerate innovation and ensure that solutions are inclusive and culturally relevant.</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                      <i class="bx bx-images"></i>
+                      <h4>Personalization and Customization</h4>
+                      <p>Future systems may offer personalization features, allowing users to customize gestures or sign language interpretations based on their preferences, dialects, or communication styles. This could enhance user experience and improve inclusivity.</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                      <i class="bx bx-shield"></i>
+                      <h4>Ethical Considerations</h4>
+                      <p>As with any AI-driven technology, there will be important ethical considerations to address, including privacy, data security, bias mitigation, and ensuring that the technology respects the rights and autonomy of sign language users.</p>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+            </section><!-- End Features Section -->
+        
+            <!-- ======= Services Section ======= -->
+            <section id="services" class="services">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="section-title">
+                  <h2>Services</h2>
+                  <p>Check our Services</p>
+                </div>
+        
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                      <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                      <h4><a href="">Real-Time Translation</a></h4>
+                      <p>Once the text is extracted from the uploaded image, seamlessly integrate it with the platform's existing gesture language translation service. Users can then choose to translate the extracted text into sign language gestures or written/spoken language, depending on their preferences.</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                      <div class="icon"><i class="bx bx-file"></i></div>
+                      <h4><a href="">Image Recognition</a></h4>
+                      <p>mplement an image recognition service that can analyze and interpret images containing text. This service would use optical character recognition (OCR) technology to extract text from images captured by users.</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                      <div class="icon"><i class="bx bx-tachometer"></i></div>
+                      <h4><a href="">Educational Resources</a></h4>
+                      <p>Provide educational resources and tutorials to help users learn sign language more effectively. This could include interactive lessons, video demonstrations, quizzes, and other learning materials designed to improve sign language proficiency.</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                      <div class="icon"><i class="bx bx-world"></i></div>
+                      <h4><a href="">Accuracy and Performance</a></h4>
+                      <p>ocus on optimizing the accuracy and performance of the image recognition service to ensure reliable text extraction from a variety of images. Implement error-handling mechanisms and feedback loops to improve the service over time based on user input and usage patterns.</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                      <div class="icon"><i class="bx bx-slideshow"></i></div>
+                      <h4><a href="">Customization Options</a></h4>
+                      <p>Provide customization options for users to adjust settings such as text recognition sensitivity, language preferences, and output format. This would allow users to tailor the image-to-text conversion process to their specific needs and preferences.</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                      <div class="icon"><i class="bx bx-arch"></i></div>
+                      <h4><a href="">Multi-Language Support</a></h4>
+                      <p>Ensure that the image recognition service supports multiple languages, allowing users to extract text from images in different languages. This would make the platform more versatile and accessible to users from diverse linguistic backgrounds.</p>
+                    </div>
+                  </div>
+        
+                </div>
+        
+              </div>
+            </section><!-- End Services Section -->
+        
+            <!-- ======= Cta Section ======= -->
+            <section id="cta" class="cta">
+              <div class="container" data-aos="zoom-in">
+        
+                <div class="text-center">
+                  <h3>Call To Action</h3>
+                  <p> At Gesture Language Translator, we're here to help you with any questions, feedback, or assistance you may need. Feel free to reach out to us via phone for personalized support.</p>
+                  <a class="cta-btn" href="#">Call To Action</a>
+                </div>
+        
+              </div>
+            </section><!-- End Cta Section -->
+        
+         
+        
+        
+            <!-- ======= Team Section ======= -->
+            <section id="team" class="team">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="section-title">
+                  <h2>Team</h2>
+                  <p>Check our Team</p>
+                </div>
+        
+                <div class="row">
+        
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Ruttvik</h4>
+                        <span>Front-end devloper</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="200">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Kashish</h4>
+                        <span>Back-end devloper</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="300">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Diya</h4>
+                        <span>Front-end devloper</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="400">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Pooja</h4>
+                        <span>Back-end devloper</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+        
+              </div>
+            </section><!-- End Team Section -->
+        
+            <!-- ======= Contact Section ======= -->
+            <section id="contact" class="contact">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="section-title">
+                  <h2>Contact</h2>
+                  <p>Contact Us</p>
+                </div>
+        
+                <div>
+                  <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7171799041357!2d73.36084547434423!3d22.288700743317616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University!5e0!3m2!1sen!2sin!4v1710607052214!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" frameborder="0" allowfullscreen></iframe>
+                </div>
+        
+                <div class="row mt-5">
+        
+                  <div class="col-lg-4">
+                    <div class="info">
+                      <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Location:</h4>
+                        <p>Parul University , vadodara,Gujrat ,391760</p>
+                      </div>
+        
+                      <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>info@example.com</p>
+                      </div>
+        
+                      <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+1 5589 55488 55s</p>
+                      </div>
+        
+                    </div>
+        
+                  </div>
+        
+                  <div class="col-lg-8 mt-5 mt-lg-0">
+        
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <div class="row">
+                        <div class="col-md-6 form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                      </div>
+                      <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                      </div>
+                      <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+        
+                  </div>
+        
+                </div>
+        
+              </div>
+            </section><!-- End Contact Section -->
+           
+          </main><!-- End #main -->
+        
+          <!-- ======= Footer ======= -->
+          <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+        
+                  <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                      <h3>SignForge <span>.</span></h3>
+                      <p>
+                        Parul University <br>
+                        waghodiya, india<br><br>
+                        <strong>Phone:</strong> +91 9999999999<br>
+                        <strong>Email:</strong> info@example.com<br>
+                      </p>
+                      <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('home')}}">Home</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('about')}}">About us</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Machine learning</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Artificial intelligance</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Web design</a></li>
+                      
+                    </ul>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>Keep your subscribers connected with the latest news, tips, and resources related to sign language translation and accessibility.</p>
+                    <form action="" method="post">
+                      <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+        
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+        
+            <div class="container">
+              <div class="copyright">
+                &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">SignForge </a>
+              </div>
+            </div>
+          </footer><!-- End Footer -->
+        
+          <div id="preloader"></div>
+          <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        
+          <!-- Vendor JS Files -->
+          <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+          <script src="assets/vendor/aos/aos.js"></script>
+          <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+          <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+          <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+          <script src="assets/vendor/php-email-form/validate.js"></script>
+        
+          <!-- Template Main JS File -->
+          <script src="assets/js/main.js"></script>
+        
+        </body>
+        
+        </html>
+
+
+    <!-- End of bodyStart -->
+    <!-- <div id="main"
+        data-framer-hydrate-v2="{&quot;routeId&quot;:&quot;rrQS5Kq7S&quot;,&quot;localizationId&quot;:&quot;default&quot;,&quot;localeId&quot;:&quot;default&quot;}"
+        data-framer-ssr-released-at="2023-08-01T10:44:16.392Z" data-framer-page-optimized-at="2023-08-22T07:32:00.079Z">
+        <div class="framer-pGik1 framer-iH9dZ framer-kOe06" style="display:contents">
+            <div class="framer-rxoahj" style="min-height:100%;width:auto">
+                <header class="framer-yygfmw" data-framer-name="Hero" name="Hero">
+                    <div class="framer-1qy5v1a-container">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-mt7KB framer-v-1kj1evw" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Desktop" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-xq2bpj" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1d8us0d" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-q9psda" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ln9yyv" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-15a9ht1" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-kso2bz" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-1uolil8" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Phone" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.15">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-14b47sv" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Tablet" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-jucfjf">
+                        <div class="framer-1g76ic2">
+                            <div data-framer-component-type="SVG"
+                                style="image-rendering:pixelated;flex-shrink:0;background-size:100% 100%;background-image:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20129%20129%22%3E%3Cpath%20d%3D%22M%2064.5%200.713%20C%2099.729%200.713%20128.287%2029.271%20128.287%2064.5%20C%20128.287%2064.545%20128.287%2064.591%20128.287%2064.636%20L%200.713%2064.636%20C%200.713%2064.591%200.713%2064.545%200.713%2064.5%20C%200.713%2029.271%2029.271%200.713%2064.5%200.713%20Z%20M%2064.5%20128.287%20C%2053.759%20128.287%2043.638%20125.632%2034.757%20120.943%20L%2094.243%20120.943%20C%2085.362%20125.632%2075.241%20128.287%2064.5%20128.287%20Z%20M%20128.246%2066.812%20C%20128.197%2068.184%20128.105%2069.544%20127.971%2070.892%20L%201.029%2070.892%20C%200.895%2069.544%200.803%2068.184%200.754%2066.812%20Z%20M%20127.717%2073.068%20C%20127.507%2074.628%20127.242%2076.171%20126.921%2077.693%20L%202.079%2077.693%20C%201.758%2076.171%201.493%2074.628%201.283%2073.068%20Z%20M%20125.844%2082.045%20C%20125.397%2083.612%20124.891%2085.154%20124.329%2086.669%20L%204.671%2086.669%20C%204.109%2085.154%203.603%2083.612%203.156%2082.045%20Z%20M%20122.53%2091.021%20C%20121.764%2092.694%20120.928%2094.327%20120.026%2095.918%20L%208.974%2095.918%20C%208.072%2094.327%207.236%2092.694%206.47%2091.021%20Z%20M%20113.646%20105.166%20C%20111.724%20107.486%20109.641%20109.668%20107.413%20111.695%20L%2021.587%20111.695%20C%2019.359%20109.668%2017.276%20107.486%2015.354%20105.166%20Z%22%20fill%3D%22%23FFFFFF%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')"
+                                class="framer-1yzfbw9"></div>
+                            <div class="framer-1pas5r3">
+                                <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                    data-framer-background-image-wrapper="true"><img
+                                        src="https://framerusercontent.com/images/SKo1XdCmWafQDZiKzD4ohEY49Y.jpg?scale-down-to=512"
+                                        alt=""
+                                        srcset="https://framerusercontent.com/images/SKo1XdCmWafQDZiKzD4ohEY49Y.jpg?scale-down-to=512 409w, https://framerusercontent.com/images/SKo1XdCmWafQDZiKzD4ohEY49Y.jpg?scale-down-to=1024 819w, https://framerusercontent.com/images/SKo1XdCmWafQDZiKzD4ohEY49Y.jpg 1200w"
+                                        sizes="(min-width: 1200px) 128px, (min-width: 810px) and (max-width: 1199px) 128px, (max-width: 809px) 128px"
+                                        style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                        data-framer-original-sizes="128px"></div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-1ooop7m"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h1 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:72px;--framer-line-height:1.1em;--framer-text-alignment:left;--framer-text-color:rgb(184, 219, 217)"
+                                    class="framer-text">Unleash the Power </h1>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-1ooop7m"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h1 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:32px;--framer-line-height:1.1em;--framer-text-alignment:left;--framer-text-color:rgb(184, 219, 217)"
+                                    class="framer-text">Unleash the Power of Sign Langu</h1>
+                            </div>
+                        </div> -->
+                        <!-- <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-1ooop7m"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h1 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:64px;--framer-line-height:1.1em;--framer-text-alignment:left;--framer-text-color:rgb(184, 219, 217)"
+                                    class="framer-text">Unleash the Power </h1>
+                            </div>
+                        </div>
+                        <div class="framer-1opv9r3" data-framer-name="Buttons" name="Buttons"></div>
+                    </div>
+                </header>
+                <div class="framer-fz8mil" data-framer-name="Text" name="Text">
+                    <div class="framer-10fscul-container">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-mt7KB framer-v-1kj1evw" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Desktop" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-xq2bpj" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1d8us0d" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-q9psda" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ln9yyv" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-15a9ht1" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-kso2bz" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-1uolil8" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Phone" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.15">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-14b47sv" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Tablet" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-htc7fd" data-framer-name="Content" name="Content">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-39m9s8"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:48px;--framer-text-alignment:left;--framer-text-color:rgb(184, 219, 217)"
+                                    class="framer-text">Welcome to SignForge!</h2>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-39m9s8"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:32px;--framer-text-alignment:left;--framer-text-color:rgb(184, 219, 217)"
+                                    class="framer-text">Welcome to SignForge!</h2>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-39m9s8"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:40px;--framer-text-alignment:left;--framer-text-color:rgb(184, 219, 217)"
+                                    class="framer-text">Welcome to SignForge!</h2>
+                            </div>
+                        </div>
+                        <div class="framer-1hl2oi5" data-framer-name="Paragraphs" name="Paragraphs">
+                            <div class="ssr-variant hidden-1ekscv2">
+                                <div class="framer-4uj8x9"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:32px;--framer-letter-spacing:-0.05em;--framer-line-height:1.3em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                        class="framer-text">Forget the barriers and embrace the world of sign language
+                                        with SignForge, the ultimate hand sign language translator. Dive into the
+                                        realm of seamless communication across boundaries and make the world a better,
+                                        more inclusive place.</h3>
+                                </div>
+                            </div>
+                            <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                                <div class="framer-4uj8x9"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:20px;--framer-letter-spacing:-0.05em;--framer-line-height:1.3em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                        class="framer-text">Forget the barriers and embrace the world of sign language
+                                        with SignForge, the ultimate hand sign language translator. Dive into the
+                                        realm of seamless communication across boundaries and make the world a better,
+                                        more inclusive place.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-15es4lr-container">
+                        <div
+                            style="width:100%;height:100%;background-color:rgb(0, 0, 0);background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' %3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23586f7c' %3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);background-size:40px 40px;border-radius:0">
+                        </div>
+                    </div>
+                </div>
+                <div class="framer-hppbpq" data-framer-name="Quote" name="Quote">
+                    <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                        <div class="framer-19e0frb"
+                            style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                            data-framer-component-type="RichTextContainer">
+                            <h1 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:80px;--framer-line-height:1.1em;--framer-text-alignment:center;--framer-text-color:rgb(255, 255, 255)"
+                                class="framer-text">Speak without saying a word.</h1>
+                        </div>
+                    </div>
+                    <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                        <div class="framer-19e0frb"
+                            style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                            data-framer-component-type="RichTextContainer">
+                            <h1 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:32px;--framer-line-height:1.1em;--framer-text-alignment:center;--framer-text-color:rgb(255, 255, 255)"
+                                class="framer-text">Speak without saying a word.</h1>
+                        </div>
+                    </div>
+                    <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                        <div class="framer-19e0frb"
+                            style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                            data-framer-component-type="RichTextContainer">
+                            <h1 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:64px;--framer-line-height:1.1em;--framer-text-alignment:center;--framer-text-color:rgb(255, 255, 255)"
+                                class="framer-text">Speak without saying a word.</h1>
+                        </div>
+                    </div>
+                    <div class="ssr-variant hidden-1ekscv2">
+                        <div class="framer-1bxo9zi" data-framer-name="Image" name="Image">
+                            <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                data-framer-background-image-wrapper="true"><img
+                                    src="https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg?scale-down-to=512"
+                                    alt=""
+                                    srcset="https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg?scale-down-to=512 341w, https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg?scale-down-to=1024 682w, https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg 1200w"
+                                    sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199px) 100vw, (max-width: 809px) 100vw"
+                                    style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                    loading="lazy" data-framer-original-sizes="100vw"></div>
+                        </div>
+                    </div>
+                    <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                        <div class="framer-1bxo9zi" data-framer-name="Image" name="Image">
+                            <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                data-framer-background-image-wrapper="true"><img
+                                    src="https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg?scale-down-to=512"
+                                    alt=""
+                                    srcset="https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg?scale-down-to=512 341w, https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg?scale-down-to=1024 682w, https://framerusercontent.com/images/zhk2Lprob1lXA9lBDwaVd0c62b0.jpg 1200w"
+                                    sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199px) 100vw, (max-width: 809px) 100vw"
+                                    style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                    data-framer-original-sizes="100vw"></div>
+                        </div>
+                    </div>
+                    <div class="framer-15aze6d-container">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-mt7KB framer-v-1kj1evw" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Desktop" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-xq2bpj" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1d8us0d" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-q9psda" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ln9yyv" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-15a9ht1" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-kso2bz" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-1uolil8" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Phone" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.15">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-14b47sv" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Tablet" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="framer-wdqal7" data-framer-name="Text" name="Text">
+                    <div class="framer-mykcmo-container">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-mt7KB framer-v-1kj1evw" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Desktop" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-xq2bpj" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1d8us0d" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-q9psda" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ln9yyv" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-15a9ht1" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-kso2bz" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-1uolil8" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Phone" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.15">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-14b47sv" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Tablet" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-1dws8ks" data-framer-name="Content" name="Content">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-higo96"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:48px;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                    class="framer-text">Why Choose signify?</h2>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-higo96"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:32px;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                    class="framer-text">Why Choose SignForge?</h2>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-higo96"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:40px;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                    class="framer-text">Why Choose SignForge? </h2>
+                            </div>
+                        </div>
+                        <div class="framer-1jaxfzy" data-framer-name="Paragraphs" name="Paragraphs">
+                            <div class="framer-37xsmt"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:20px;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                    class="framer-text">SignForge is revolutionizing the way we communicate, breaking
+                                    down barriers and making sign language accessible to everyone. With our unwavering
+                                    commitment to innovation, we're dedicated to bringing you the most effective and
+                                    user-friendly sign language translator on the market.</h3>
+                            </div>
+                            <div class="framer-mch2o8">
+                                <div class="framer-1tahr1k" data-framer-name="Card" name="Card">
+                                    <div class="framer-jwg6i0"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:32px;--framer-text-alignment:left;--framer-text-color:rgb(255, 255, 255)"
+                                            class="framer-text">100</h2>
+                                    </div>
+                                    <div class="framer-88z89z"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">Real-time Speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="framer-1r1nj8y" data-framer-name="Testimonials" name="Testimonials">
+                    <div class="framer-5iwptr-container">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-mt7KB framer-v-1kj1evw" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Desktop" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-xq2bpj" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1d8us0d" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-q9psda" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ln9yyv" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-15a9ht1" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-kso2bz" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-1uolil8" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Phone" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.15">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-14b47sv" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Tablet" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-1ud5fed">
+                        <div class="framer-zd7u2p" data-border="true" data-framer-name="Card" name="Card">
+                            <div class="ssr-variant hidden-1ekscv2">
+                                <div class="framer-1gx65i9" data-framer-name="Image" name="Image">
+                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                        data-framer-background-image-wrapper="true"><img
+                                            src="https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg?scale-down-to=512"
+                                            alt=""
+                                            srcset="https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg?scale-down-to=512 512w, https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg?scale-down-to=1024 1024w, https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg 1200w"
+                                            sizes="(min-width: 1200px) 50px, (min-width: 810px) and (max-width: 1199px) 50px, (max-width: 809px) 60px"
+                                            style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                            loading="lazy" data-framer-original-sizes="50px"></div>
+                                </div>
+                            </div>
+                            <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                                <div class="framer-1gx65i9" data-framer-name="Image" name="Image">
+                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                        data-framer-background-image-wrapper="true"><img
+                                            src="https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg?scale-down-to=512"
+                                            alt=""
+                                            srcset="https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg?scale-down-to=512 512w, https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg?scale-down-to=1024 1024w, https://framerusercontent.com/images/4Ek6RyK1M6W4EKMeAt75KdyK1oA.jpg 1200w"
+                                            sizes="(min-width: 1200px) 50px, (min-width: 810px) and (max-width: 1199px) 50px, (max-width: 809px) 60px"
+                                            style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                            loading="lazy" data-framer-original-sizes="60px"></div>
+                                </div>
+                            </div>
+                            <div class="framer-1fyt36o" data-framer-name="Copy" name="Copy">
+                                <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                                    <div class="framer-ln95jg"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:20px;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">SignForge is a game-changer! It’s helped me
+                                            communicate like never before.</h3>
+                                    </div>
+                                </div>
+                                <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                                    <div class="framer-ln95jg"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">SignForge is a game-changer! It’s helped me
+                                            communicate like never before.</h3>
+                                    </div>
+                                </div>
+                                <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                                    <div class="framer-ln95jg"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">SignForge is a game-changer! It’s helped me
+                                            communicate like never before.</h3>
+                                    </div>
+                                </div>
+                                <div class="framer-3jt9t1"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:14px;--framer-line-height:1.5em;--framer-text-alignment:center;--framer-text-color:rgb(244, 244, 249)"
+                                        class="framer-text">Max Johnson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-1bohfqx" data-border="true" data-framer-name="Card" name="Card">
+                            <div class="ssr-variant hidden-1ekscv2">
+                                <div class="framer-1ixhth0" data-framer-name="Image" name="Image">
+                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                        data-framer-background-image-wrapper="true"><img
+                                            src="https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg?scale-down-to=512"
+                                            alt=""
+                                            srcset="https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg?scale-down-to=512 341w, https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg?scale-down-to=1024 682w, https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg 1200w"
+                                            sizes="(min-width: 1200px) 50px, (min-width: 810px) and (max-width: 1199px) 50px, (max-width: 809px) 60px"
+                                            style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                            loading="lazy" data-framer-original-sizes="50px"></div>
+                                </div>
+                            </div>
+                            <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                                <div class="framer-1ixhth0" data-framer-name="Image" name="Image">
+                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                        data-framer-background-image-wrapper="true"><img
+                                            src="https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg?scale-down-to=512"
+                                            alt=""
+                                            srcset="https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg?scale-down-to=512 341w, https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg?scale-down-to=1024 682w, https://framerusercontent.com/images/AvVtEo1E89zaQmr7WzxDAz3NzBU.jpg 1200w"
+                                            sizes="(min-width: 1200px) 50px, (min-width: 810px) and (max-width: 1199px) 50px, (max-width: 809px) 60px"
+                                            style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                            loading="lazy" data-framer-original-sizes="60px"></div>
+                                </div>
+                            </div>
+                            <div class="framer-1s8n2nn" data-framer-name="Copy" name="Copy">
+                                <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                                    <div class="framer-o1i6vj"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:20px;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">As a teacher, SignForge has made my classroom more
+                                            inclusive and engaging!</h3>
+                                    </div>
+                                </div>
+                                <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                                    <div class="framer-o1i6vj"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">As a teacher, SignForge has made my classroom more
+                                            inclusive and engaging!</h3>
+                                    </div>
+                                </div>
+                                <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                                    <div class="framer-o1i6vj"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">As a teacher, SignForge has made my classroom more
+                                            inclusive and engaging!</h3>
+                                    </div>
+                                </div>
+                                <div class="framer-l4lc5e"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:14px;--framer-line-height:1.5em;--framer-text-alignment:center;--framer-text-color:rgb(244, 244, 249)"
+                                        class="framer-text">Sophia Brown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-1geb4t3" data-border="true" data-framer-name="Card" name="Card">
+                            <div class="ssr-variant hidden-1ekscv2">
+                                <div class="framer-6x1b5p" data-framer-name="Image" name="Image">
+                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                        data-framer-background-image-wrapper="true"><img
+                                            src="https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg?scale-down-to=512"
+                                            alt=""
+                                            srcset="https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg?scale-down-to=512 341w, https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg?scale-down-to=1024 682w, https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg 1200w"
+                                            sizes="(min-width: 1200px) 50px, (min-width: 810px) and (max-width: 1199px) 50px, (max-width: 809px) 60px"
+                                            style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                            loading="lazy" data-framer-original-sizes="50px"></div>
+                                </div>
+                            </div>
+                            <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                                <div class="framer-6x1b5p" data-framer-name="Image" name="Image">
+                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
+                                        data-framer-background-image-wrapper="true"><img
+                                            src="https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg?scale-down-to=512"
+                                            alt=""
+                                            srcset="https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg?scale-down-to=512 341w, https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg?scale-down-to=1024 682w, https://framerusercontent.com/images/bDZDYZ1dizWN2ssjFK9zzWvnHos.jpg 1200w"
+                                            sizes="(min-width: 1200px) 50px, (min-width: 810px) and (max-width: 1199px) 50px, (max-width: 809px) 60px"
+                                            style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
+                                            loading="lazy" data-framer-original-sizes="60px"></div>
+                                </div>
+                            </div>
+                            <div class="framer-154dod7" data-framer-name="Copy" name="Copy">
+                                <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                                    <div class="framer-15kjj1j"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:20px;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">SignForge changed my life – the best sign language
+                                            translator!</h3>
+                                    </div>
+                                </div>
+                                <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                                    <div class="framer-15kjj1j"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">SignForge changed my life – the best sign language
+                                            translator!</h3>
+                                    </div>
+                                </div>
+                                <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                                    <div class="framer-15kjj1j"
+                                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                        data-framer-component-type="RichTextContainer">
+                                        <h3 style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-letter-spacing:-0.025em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(244, 244, 249)"
+                                            class="framer-text">SignForge changed my life – the best sign language
+                                            translator!</h3>
+                                    </div>
+                                </div>
+                                <div class="framer-1rygdqm"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:14px;--framer-line-height:1.5em;--framer-text-alignment:center;--framer-text-color:rgb(244, 244, 249)"
+                                        class="framer-text">Alex Smith</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="framer-l6cjvq" data-framer-name="Call to Action" name="Call to Action">
+                    <div class="framer-t9r2lo-container">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-mt7KB framer-v-1kj1evw" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Desktop" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-xq2bpj" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1d8us0d" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-q9psda" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ln9yyv" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-15a9ht1" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-kso2bz" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-1uolil8" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Phone" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.15">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-14b47sv" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Tablet" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-pi787-container">
+                        <div
+                            style="width:100%;height:100%;background-color:rgb(0, 0, 0);background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' %3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f4f4f9' %3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);background-size:40px 40px;border-radius:0">
+                        </div>
+                    </div>
+                    <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                        <div class="framer-xxlc82"
+                            style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                            data-framer-component-type="RichTextContainer">
+                            <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:48px;--framer-text-alignment:center;--framer-text-color:rgb(255, 255, 255)"
+                                class="framer-text">Join Now!</h2>
+                        </div>
+                    </div>
+                    <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                        <div class="framer-xxlc82"
+                            style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                            data-framer-component-type="RichTextContainer">
+                            <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:32px;--framer-text-alignment:center;--framer-text-color:rgb(255, 255, 255)"
+                                class="framer-text">Join Now!</h2>
+                        </div>
+                    </div>
+                    <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                        <div class="framer-xxlc82"
+                            style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                            data-framer-component-type="RichTextContainer">
+                            <h2 style="--font-selector:R0Y7VW5pY2EgT25lLXJlZ3VsYXI=;--framer-font-family:&quot;Unica One&quot;, sans-serif;--framer-font-size:32px;--framer-text-alignment:center;--framer-text-color:rgb(255, 255, 255)"
+                                class="framer-text">Join Now!</h2>
+                        </div>
+                    </div>
+                    <div class="framer-1a29gjg"
+                        style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                        data-framer-component-type="RichTextContainer">
+                        <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-line-height:1.5em;--framer-text-alignment:center;--framer-text-color:rgb(255, 255, 255)"
+                            class="framer-text">Become a part of the SignForge community and revolutionize your
+                            communication. Sign up now and explore endless possibilities.</p>
+                    </div><a class="framer-1cg16u6 framer-twk8vt" data-framer-name="Button" name="Button"
+                        href="https://{{ url_for('register') }}" rel="noopener">
+                        <div class="framer-1lk1o3v"
+                            style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                            data-framer-component-type="RichTextContainer">
+                            <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-font-size:14px;--framer-text-alignment:center"
+                                class="framer-text">Sign Up</p>
+                        </div>
+                    </a>
+                </div> -->
+                <!-- <footer class="framer-1c7azsr" data-border="true" data-framer-name="Footer" name="Footer">
+                    <div class="framer-9d8bcw-container">
+                        <div class="ssr-variant hidden-1ekscv2 hidden-1xsl4aw">
+                            <div class="framer-mt7KB framer-v-1kj1evw" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Desktop" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-xq2bpj" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1d8us0d" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-q9psda" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ln9yyv" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-15a9ht1" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-kso2bz" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1xsl4aw hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-1uolil8" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Phone" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.15">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssr-variant hidden-1ekscv2 hidden-rxoahj">
+                            <div class="framer-mt7KB framer-v-14b47sv" style="display:contents" tabindex="0">
+                                <div class="framer-1kj1evw" data-framer-name="Tablet" style="height:100%;width:100%">
+                                    <div class="framer-ie6h4o" data-framer-name="Lines" style="opacity:0.1">
+                                        <div class="framer-1vvyv1s" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-19bpnw6" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1tmkya5" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-1ofcq4r" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-wr39ac" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                        <div class="framer-18kl40n" data-framer-name="Line"
+                                            style="background-color:rgb(255, 255, 255)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-1w8gdaw" data-framer-name="Horizontal" name="Horizontal">
+                        <div class="framer-1bvan95" data-framer-name="Vertical" name="Vertical">
+                            <div class="framer-rsiswe">
+<!--                                <div class="framer-10a0ylh"-->
+<!--                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"-->
+<!--                                    data-framer-component-type="RichTextContainer">-->
+<!--                                    <p style="&#45;&#45;font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;&#45;&#45;framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;&#45;&#45;framer-line-height:1.5em;&#45;&#45;framer-text-alignment:left;&#45;&#45;framer-text-color:rgb(255, 255, 255)"-->
+<!--                                        class="framer-text"><a class="framer-text framer-styles-preset-nev4nm"-->
+<!--                                            data-styles-preset="QzwwhEKeR" href="https://{{ url_for('about') }}"-->
+<!--                                            rel="noopener">About</a></p>-->
+<!--                                </div>-->
+                                <!-- <div class="framer-wah5fp"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair &quot; &quot;Playfair Placeholder&quot;, serif;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(255, 255, 255)"
+                                        class="framer-text"><a class="framer-text framer-styles-preset-nev4nm"
+                                            data-styles-preset="QzwwhEKeR" href="https://{{ url_for('about') }}"
+                                            target="_blank" rel="noopener">Contact</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-4ia774" data-framer-name="Vertical" name="Vertical">
+                            <div class="framer-1hnw1rx">
+                                <div class="framer-10kgxwq"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(255, 255, 255)"
+                                        class="framer-text">FAQ</p>
+                                </div>
+                                <div class="framer-145kleb"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(255, 255, 255)"
+                                        class="framer-text">Support</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-1g82w4x" data-framer-name="Vertical" name="Vertical">
+                            <div class="framer-1nlxu8u">
+                                <div class="framer-y391wc"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(255, 255, 255)"
+                                        class="framer-text">Privacy</p>
+                                </div>
+                                <div class="framer-1fr7q9t"
+                                    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                    data-framer-component-type="RichTextContainer">
+                                    <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(255, 255, 255)"
+                                        class="framer-text">Terms</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-1dlj9ym">
+                        <div class="framer-18cgekz" data-border="true" data-framer-name="Copyright" name="Copyright">
+                            <div class="framer-6zz0sm" data-framer-name="Icons" name="Icons">
+                                <div class="framer-17sidsr-container">
+                                    <div
+                                        style="width:100%;height:100%;clip-path:url(#curve-v0u5PAXa2-6wbyxj);background:rgb(245, 243, 244)">
+                                        <svg>
+                                            <clipPath id="curve-v0u5PAXa2-6wbyxj" clipPathUnits="objectBoundingBox"
+                                                transform="scale(0.005)">
+                                                <path
+                                                    d="M100 100C100 100 112.5 66.5265 112.5 42.8571C112.5 19.1878 106.904 0 100 0C93.0964 0 87.5 19.1878 87.5 42.8571C87.5 66.5265 100 100 100 100ZM100 100C100 100 114.831 132.508 131.567 149.245C148.304 165.982 165.829 175.592 170.711 170.711C175.592 165.829 165.982 148.304 149.245 131.567C132.508 114.831 100 100 100 100ZM100 100C100 100 133.474 87.5 157.143 87.5C180.812 87.5 200 93.0964 200 100C200 106.904 180.812 112.5 157.143 112.5C133.474 112.5 100 100 100 100ZM100 100C100 100 67.4918 114.831 50.755 131.567C34.0183 148.304 24.4077 165.829 29.2893 170.711C34.1709 175.592 51.696 165.982 68.4327 149.245C85.1695 132.508 100 100 100 100ZM100 100L100 100C100.028 100.074 112.5 133.5 112.5 157.143C112.5 180.812 106.904 200 100 200C93.0964 200 87.5 180.812 87.5 157.143C87.5 133.474 100 100 100 100ZM100 100C100 100 66.5265 87.5 42.8571 87.5C19.1878 87.5 0 93.0964 0 100C0 106.904 19.1878 112.5 42.8571 112.5C66.5265 112.5 100 100 100 100ZM100 99.9999C100 99.9999 132.508 85.1694 149.245 68.4327C165.982 51.6959 175.592 34.1708 170.711 29.2893C165.829 24.4077 148.304 34.0183 131.567 50.755C114.831 67.4918 100 99.9999 100 99.9999ZM68.4327 50.755C85.1695 67.4918 100 100 100 100C100 100 67.4918 85.1695 50.7551 68.4327C34.0183 51.696 24.4078 34.1709 29.2893 29.2893C34.1709 24.4078 51.696 34.0183 68.4327 50.755Z">
+                                                </path>
+                                            </clipPath>
+                                        </svg></div>
+                                </div>
+                            </div>
+                            <div class="framer-jfh76b"
+                                style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+                                data-framer-component-type="RichTextContainer">
+                                <p style="--font-selector:R0Y7UGxheWZhaXItcmVndWxhcg==;--framer-font-family:&quot;Playfair&quot;, &quot;Playfair Placeholder&quot;, serif;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:rgb(255, 255, 255)"
+                                    class="framer-text"><a class="framer-text framer-styles-preset-1plowz7"
+                                        data-styles-preset="U1LTdYAWa"
+                                        href="mailto:signforge@gmail.com?subject=Suggestions" target="_blank"
+                                        rel="noopener">©2023 signforge. All rights reserved.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div id="overlay"></div>
+        </div>
+    </div>
+    <div id="svg-templates" style="position: absolute; overflow: hidden; top: 0; left: 0; width: 0; height: 0">
+    </div>
+    <script data-framer-appear-animation="no-preference"></script>
+    <script type="module" data-framer-bundle=""
+        src="https://framerusercontent.com/sites/7bSFHQWmGSsaFf1sIa9lwp/_script0.HBP7ED2V.mjs"></script>
+
+     End of bodyEnd -->
+
+
+ 
